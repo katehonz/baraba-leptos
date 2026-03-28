@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+target/
+*.jar
+*.war
+*.class
+backend/app
+backend/baraba-server
+backend/start_server
+
+# Database
+*.sqlite3
+*.db
+backend/db/*.sqlite3
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# TypeScript
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Docker
+docker-compose.override.yml
+
+# Temp files
+*.tmp
+*.bak
+pw.txt
+pw.md
+
+# Large data files
+*.csv
+old/
+old-rs/
+banki/
+
+# Security - Never commit these!
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.der
+*.secret
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.gpg
+*.asc
+secrets/
+credentials/
+
+# Database backups
+*.dump
+*.backup
+*.sql.gz
+*.sql.bz2
+
+# Local data directories
+data/
+uploads/
+storage/
+attachments/
+backups/
+
+# Docker volumes
+volumes/

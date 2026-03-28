@@ -1,0 +1,67 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+/* Hide number input spinners - accounting software never shows spinners */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	margin: 0 !important;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield !important;
+	appearance: textfield !important;
+}
+
+/* Also target inputs inside DaisyUI components */
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+	-webkit-appearance: none !important;
+	appearance: none !important;
+	margin: 0 !important;
+}
+
+.input[type="number"] {
+	-moz-appearance: textfield !important;
+	appearance: textfield !important;
+}
+
+/* Print styles */
+@media print {
+	/* Hide sidebar */
+	nav {
+		display: none !important;
+	}
+
+	/* Make main content full width */
+	main {
+		margin: 0 !important;
+		padding: 10px !important;
+		width: 100% !important;
+	}
+
+	/* Hide buttons and controls */
+	button {
+		display: none !important;
+	}
+
+	/* Hide filter section */
+	.no-print,
+	[style*="box-shadow"] {
+		box-shadow: none !important;
+	}
+
+	/* Adjust table for print */
+	table {
+		font-size: 10px !important;
+	}
+
+	/* Page settings */
+	@page {
+		size: landscape;
+		margin: 1cm;
+	}
+}

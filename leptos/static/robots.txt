@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baraba.org/sitemap.xml

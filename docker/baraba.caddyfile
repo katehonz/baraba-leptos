@@ -1,0 +1,38 @@
+# Добави този блок към /etc/caddy/Caddyfile
+# или импортирай с: import /path/to/baraba.caddyfile
+
+baraba.org {
+    # API requests -> backend
+    handle /api/* {
+        reverse_proxy baraba-backend:3000
+    }
+
+    # WebSocket support
+    handle /ws/* {
+        reverse_proxy baraba-backend:3000
+    }
+
+    # Static files and SPA -> frontend
+    handle {
+        reverse_proxy baraba-frontend:80
+    }
+
+    # Security headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+        X-XSS-Protection "1; mode=block"
+    }
+
+    # Gzip compression
+    encode gzip
+
+    # Logging
+    log {
+        output file /var/log/caddy/baraba.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+    }
+}

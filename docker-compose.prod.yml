@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: baraba-db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-baraba}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB:-baraba_production}
+    volumes:
+      # IMPORTANT: Change this to your actual data directory
+      # Example for production: /mnt/block-storage/baraba/postgres
+      - ./data/postgres:/var/lib/postgresql/data
+    networks:
+      - baraba-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-baraba}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend.Dockerfile
+    container_name: baraba-backend
+    restart: unless-stopped
+    environment:
+      - PORT=3000
+      - DATABASE_URL=postgres://${POSTGRES_USER:-baraba}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-baraba_production}
+      - LUCKY_ENV=production
+      - SECRET_KEY_BASE=${SECRET_KEY_BASE}
+      - SEND_GRID_KEY=${SEND_GRID_KEY:-}
+      - APP_DOMAIN=${APP_DOMAIN:-localhost}
+    networks:
+      - baraba-network
+      - caddy-network
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/frontend.Dockerfile
+    container_name: baraba-frontend
+    restart: unless-stopped
+    networks:
+      - baraba-network
+      - caddy-network
+    depends_on:
+      - backend
+
+networks:
+  baraba-network:
+    driver: bridge
+  caddy-network:
+    external: true
