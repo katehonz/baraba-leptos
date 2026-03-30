@@ -89,7 +89,7 @@ baraba-2/
 
 - **Crystal** >= 1.16.3
 - **Lucky CLI**
-- **Rust** >= 1.75
+- **Rust** = 1.93.0 (продуктът е създаден с `rustc 1.93.0 (254b59607 2026-01-19)` - по-високи версии може да не работят)
 - **Trunk** (WASM bundler)
 - **PostgreSQL** 14+
 - **Node.js** (за някои build инструменти)
@@ -398,7 +398,7 @@ trunk build --release   # Production build
 - **HTTP:** HTTP::Server
 
 ### Frontend
-- **Език:** Rust 1.75+
+- **Език:** Rust 1.93.0 (по-високи версии може да не работят)
 - **Framework:** Leptos
 - **Bundler:** Trunk
 - **HTTP:** gloo-net
