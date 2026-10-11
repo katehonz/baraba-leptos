@@ -1,0 +1,35 @@
+# Добави този блок към съществуващия Caddyfile на VPS
+# Замени baraba.example.com с твоя домейн
+
+baraba.example.com {
+    # API requests -> backend
+    handle /api/* {
+        reverse_proxy baraba-backend:3000
+    }
+
+    # WebSocket support (ако е нужен)
+    handle /ws/* {
+        reverse_proxy baraba-backend:3000
+    }
+
+    # Static files and SPA -> frontend
+    handle {
+        reverse_proxy baraba-frontend:80
+    }
+
+    # Logging
+    log {
+        output file /var/log/caddy/baraba.log
+        format json
+    }
+
+    # Security headers
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+
+    # Gzip compression
+    encode gzip
+}

@@ -1,0 +1,18 @@
+{
+  "cf.op.in.cust": "+50*Д/411К",
+  "cf.op.out.sup": "+401Д/50*К",
+  "cf.op.out.staff": "+421Д/50*К+604Д/50*К",
+  "cf.op.out.tax": "+4532Д/50*К+459Д/50*К",
+  "cf.op.net": "+@cf.op.in.cust+@cf.op.in.other+@cf.op.stfa-@cf.op.out.sup-@cf.op.out.staff-@cf.op.out.tax-@cf.op.out.other",
+  "cf.inv.out.ppe": "+20*Д/50*К",
+  "cf.inv.in.ppe": "+50*Д/20*К",
+  "cf.inv.net": "+@cf.inv.in.ppe-@cf.inv.out.ppe-@cf.inv.acq",
+  "cf.fin.in.cap": "+50*Д/101К",
+  "cf.fin.in.loan": "+50*Д/151К",
+  "cf.fin.out.loan": "+151Д/50*К",
+  "cf.fin.out.div": "+455Д/50*К",
+  "cf.fin.net": "+@cf.fin.in.cap+@cf.fin.in.loan-@cf.fin.out.loan-@cf.fin.out.div-@cf.fin.lease",
+  "cf.change": "+@cf.op.net+@cf.inv.net+@cf.fin.net+@cf.fx",
+  "cf.open": "+501НД+502НД+503НД",
+  "cf.close": "+@cf.open+@cf.change"
+}

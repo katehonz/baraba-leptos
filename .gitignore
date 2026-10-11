@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+target/
+*.jar
+*.war
+*.class
+backend/app
+backend/baraba-server
+backend/start_server
+
+# Database
+*.sqlite3
+*.db
+backend/db/*.sqlite3
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Secrets
+secret/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# TypeScript
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Docker
+docker-compose.override.yml
+
+# Temp files
+*.tmp
+*.bak
+pw.txt
+pw.md
+
+# Large data files
+*.csv
+old/
+old-rs/
+banki/

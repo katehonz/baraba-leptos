@@ -1,0 +1,247 @@
+[
+  {
+    "code": "pl.e",
+    "parent": null,
+    "kind": "header",
+    "side": "expense",
+    "name": "А. Разходи"
+  },
+  {
+    "code": "pl.e.1",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "1. Намаление на запасите от продукция и незавършено производство"
+  },
+  {
+    "code": "pl.e.2",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "2. Разходи за суровини, материали и външни услуги, в т.ч.:"
+  },
+  {
+    "code": "pl.e.2a",
+    "parent": "pl.e.2",
+    "kind": "line",
+    "side": "expense",
+    "name": "а) суровини и материали"
+  },
+  {
+    "code": "pl.e.2b",
+    "parent": "pl.e.2",
+    "kind": "line",
+    "side": "expense",
+    "name": "б) външни услуги"
+  },
+  {
+    "code": "pl.e.3",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "3. Разходи за персонала, в т.ч.:"
+  },
+  {
+    "code": "pl.e.3a",
+    "parent": "pl.e.3",
+    "kind": "line",
+    "side": "expense",
+    "name": "а) разходи за възнаграждения"
+  },
+  {
+    "code": "pl.e.3b",
+    "parent": "pl.e.3",
+    "kind": "line",
+    "side": "expense",
+    "name": "б) разходи за осигуровки, в т.ч. осигуровки, свързани с пенсии"
+  },
+  {
+    "code": "pl.e.4",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "4. Разходи за амортизация и обезценка"
+  },
+  {
+    "code": "pl.e.5",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "5. Други разходи, в т.ч.:"
+  },
+  {
+    "code": "pl.e.5a",
+    "parent": "pl.e.5",
+    "kind": "line",
+    "side": "expense",
+    "name": "а) балансова стойност на продадените активи"
+  },
+  {
+    "code": "pl.e.5b",
+    "parent": "pl.e.5",
+    "kind": "line",
+    "side": "expense",
+    "name": "б) провизии"
+  },
+  {
+    "code": "pl.e.op",
+    "parent": "pl.e",
+    "kind": "total",
+    "side": "expense",
+    "name": "Общо разходи за оперативна дейност"
+  },
+  {
+    "code": "pl.e.6",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "6. Разходи от обезценка на финансови активи, включително инвестициите, признати като текущи активи"
+  },
+  {
+    "code": "pl.e.7",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "7. Разходи за лихви и други финансови разходи"
+  },
+  {
+    "code": "pl.e.fin",
+    "parent": "pl.e",
+    "kind": "total",
+    "side": "expense",
+    "name": "Общо финансови разходи"
+  },
+  {
+    "code": "pl.e.t",
+    "parent": "pl.e",
+    "kind": "total",
+    "side": "expense",
+    "name": "Общо разходи"
+  },
+  {
+    "code": "pl.e.tax",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "10. Разходи за данъци от печалбата"
+  },
+  {
+    "code": "pl.e.other_tax",
+    "parent": "pl.e",
+    "kind": "line",
+    "side": "expense",
+    "name": "11. Други данъци, алтернативни на корпоративния данък"
+  },
+  {
+    "code": "pl.e.profit",
+    "parent": "pl.e",
+    "kind": "total",
+    "side": "expense",
+    "name": "12. Печалба"
+  },
+  {
+    "code": "pl.i",
+    "parent": null,
+    "kind": "header",
+    "side": "income",
+    "name": "Б. Приходи"
+  },
+  {
+    "code": "pl.i.1",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "1. Нетни приходи от продажби, в т.ч.:"
+  },
+  {
+    "code": "pl.i.1a",
+    "parent": "pl.i.1",
+    "kind": "line",
+    "side": "income",
+    "name": "а) продукция"
+  },
+  {
+    "code": "pl.i.1b",
+    "parent": "pl.i.1",
+    "kind": "line",
+    "side": "income",
+    "name": "б) стоки"
+  },
+  {
+    "code": "pl.i.1c",
+    "parent": "pl.i.1",
+    "kind": "line",
+    "side": "income",
+    "name": "в) услуги"
+  },
+  {
+    "code": "pl.i.2",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "2. Увеличение на запасите от продукция и незавършено производство"
+  },
+  {
+    "code": "pl.i.3",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "3. Разходи за придобиване на активи по стопански начин"
+  },
+  {
+    "code": "pl.i.4",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "4. Други приходи, в т.ч. приходи от финансирания"
+  },
+  {
+    "code": "pl.i.op",
+    "parent": "pl.i",
+    "kind": "total",
+    "side": "income",
+    "name": "Общо приходи от оперативна дейност"
+  },
+  {
+    "code": "pl.i.5",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "5. Приходи от участия в дъщерни, асоциирани и смесени предприятия"
+  },
+  {
+    "code": "pl.i.6",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "6. Приходи от други инвестиции и заеми, признати като нетекущи активи"
+  },
+  {
+    "code": "pl.i.7",
+    "parent": "pl.i",
+    "kind": "line",
+    "side": "income",
+    "name": "7. Други лихви и финансови приходи"
+  },
+  {
+    "code": "pl.i.fin",
+    "parent": "pl.i",
+    "kind": "total",
+    "side": "income",
+    "name": "Общо финансови приходи"
+  },
+  {
+    "code": "pl.i.t",
+    "parent": "pl.i",
+    "kind": "total",
+    "side": "income",
+    "name": "Общо приходи"
+  },
+  {
+    "code": "pl.i.loss",
+    "parent": "pl.i",
+    "kind": "total",
+    "side": "income",
+    "name": "10. Загуба"
+  }
+]

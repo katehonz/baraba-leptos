@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraba - Онлайн счетоводен софтуер за България</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Baraba е модерен онлайн счетоводен софтуер за български бизнес. Двустранно счетоводство, ДДС дневници, фактуриране, автоматичен импорт и експорт към НАП. Лесен, бърз и достъпен.">
+    <meta name="keywords" content="счетоводен софтуер, счетоводна програма, онлайн счетоводство, счетоводство България, ДДС дневници, фактуриране, дневник покупки, дневник продажби, НАП, двустранно счетоводство, baraba">
+    <meta name="author" content="Baraba">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://baraba.org/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://baraba.org/">
+    <meta property="og:title" content="Baraba - Онлайн счетоводен софтуер за България">
+    <meta property="og:description" content="Модерен счетоводен софтуер с двустранно счетоводство, ДДС дневници, фактуриране и автоматичен експорт към НАП.">
+    <meta property="og:locale" content="bg_BG">
+    <meta property="og:site_name" content="Baraba">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Baraba - Онлайн счетоводен софтуер">
+    <meta name="twitter:description" content="Модерен счетоводен софтуер с двустранно счетоводство, ДДС дневници, фактуриране и автоматичен експорт към НАП.">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (built) -->
+    <link data-trunk rel="css" href="/style/output.css" />
+
+    <!-- SheetJS for Excel export -->
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+    
+    <!-- Debug - will be removed after testing -->
+    <script>
+        console.log('BARABA DEBUG: HTML loaded at', new Date().toISOString());
+        window.addEventListener('error', function(e) {
+            console.error('BARABA DEBUG: JS Error:', e.message, 'at', e.filename, 'line', e.lineno);
+        });
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('BARABA DEBUG: Unhandled promise rejection:', e.reason);
+        });
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <link data-trunk rel="rust" data-wasm-opt="z" data-target-name="baraba_leptos" data-cargo-features="csr"/>
+</body>
+</html>

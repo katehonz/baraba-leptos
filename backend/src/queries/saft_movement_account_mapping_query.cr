@@ -1,0 +1,2 @@
+class SaftMovementAccountMappingQuery < SaftMovementAccountMapping::BaseQuery
+end

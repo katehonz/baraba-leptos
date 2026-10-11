@@ -1,0 +1,41 @@
+# Include modules and add methods that are for all API requests
+abstract class ApiAction < Lucky::Action
+  # APIs typically do not need to send cookie/session data.
+  # Remove this line if you want to send cookies in the response header.
+  disable_cookies
+  accepted_formats [:json]
+
+  include Api::Auth::Helpers
+  include Api::Auth::Authorization
+
+  # By default all actions require sign in.
+  # Add 'include Api::Auth::SkipRequireAuthToken' to your actions to allow all requests.
+  include Api::Auth::RequireAuthToken
+
+  # Company-scoped routes (/api/companies/:company_id/...) require the current user
+  # to be a super admin, the company owner, or have a role in that company.
+  include Api::Auth::RequireCompanyAccess
+
+  # By default all actions are required to use underscores to separate words.
+  # Add 'include Lucky::SkipRouteStyleCheck' to your actions if you wish to ignore this check for specific routes.
+  include Lucky::EnforceUnderscoredRoute
+
+  # CORS headers are handled by CorsHandler middleware
+  # No need to duplicate here
+
+  # Handle authorization errors
+  def handle_error(error : AuthorizationError::Unauthorized)
+    response.status_code = 401
+    json({success: false, message: error.message || "Не сте автентикирани"})
+  end
+
+  def handle_error(error : AuthorizationError::Forbidden)
+    response.status_code = 403
+    json({success: false, message: error.message || "Достъпът е забранен"})
+  end
+
+  def handle_error(error : PeriodClosedError)
+    response.status_code = 422
+    json({success: false, error: error.message})
+  end
+end

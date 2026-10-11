@@ -1,0 +1,646 @@
+[
+  {
+    "code": "bal.a",
+    "parent": null,
+    "kind": "line",
+    "side": "asset",
+    "name": "А. Записан, но невнесен капитал"
+  },
+  {
+    "code": "bal.b",
+    "parent": null,
+    "kind": "header",
+    "side": "asset",
+    "name": "Б. Нетекущи (дълготрайни) активи"
+  },
+  {
+    "code": "bal.b.i",
+    "parent": "bal.b",
+    "kind": "header",
+    "side": "asset",
+    "name": "I. Нематериални активи"
+  },
+  {
+    "code": "bal.b.i.1",
+    "parent": "bal.b.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "1. Продукти от развойна дейност"
+  },
+  {
+    "code": "bal.b.i.2",
+    "parent": "bal.b.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "2. Концесии, патенти, лицензии, търговски марки, програмни продукти и други подобни права и активи"
+  },
+  {
+    "code": "bal.b.i.3",
+    "parent": "bal.b.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "3. Търговска репутация"
+  },
+  {
+    "code": "bal.b.i.4",
+    "parent": "bal.b.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "4. Предоставени аванси и нематериални активи в процес на изграждане"
+  },
+  {
+    "code": "bal.b.i.t",
+    "parent": "bal.b.i",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група I"
+  },
+  {
+    "code": "bal.b.ii",
+    "parent": "bal.b",
+    "kind": "header",
+    "side": "asset",
+    "name": "II. Дълготрайни материални активи"
+  },
+  {
+    "code": "bal.b.ii.1",
+    "parent": "bal.b.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "1. Земи и сгради, в т.ч.:"
+  },
+  {
+    "code": "bal.b.ii.1a",
+    "parent": "bal.b.ii.1",
+    "kind": "line",
+    "side": "asset",
+    "name": "— земи"
+  },
+  {
+    "code": "bal.b.ii.1b",
+    "parent": "bal.b.ii.1",
+    "kind": "line",
+    "side": "asset",
+    "name": "— сгради"
+  },
+  {
+    "code": "bal.b.ii.2",
+    "parent": "bal.b.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "2. Машини, производствено оборудване и апаратура"
+  },
+  {
+    "code": "bal.b.ii.3",
+    "parent": "bal.b.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "3. Съоръжения и други"
+  },
+  {
+    "code": "bal.b.ii.4",
+    "parent": "bal.b.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "4. Предоставени аванси и дълготрайни материални активи в процес на изграждане"
+  },
+  {
+    "code": "bal.b.ii.t",
+    "parent": "bal.b.ii",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група II"
+  },
+  {
+    "code": "bal.b.iii",
+    "parent": "bal.b",
+    "kind": "header",
+    "side": "asset",
+    "name": "III. Дългосрочни финансови активи"
+  },
+  {
+    "code": "bal.b.iii.1",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "1. Акции и дялове в предприятия от група"
+  },
+  {
+    "code": "bal.b.iii.2",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "2. Предоставени заеми на предприятия от група"
+  },
+  {
+    "code": "bal.b.iii.3",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "3. Акции и дялове в асоциирани и смесени предприятия"
+  },
+  {
+    "code": "bal.b.iii.4",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "4. Предоставени заеми, свързани с асоциирани и смесени предприятия"
+  },
+  {
+    "code": "bal.b.iii.5",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "5. Дългосрочни инвестиции"
+  },
+  {
+    "code": "bal.b.iii.6",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "6. Други заеми"
+  },
+  {
+    "code": "bal.b.iii.7",
+    "parent": "bal.b.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "7. Изкупени собствени акции с отделно посочване на номиналната им стойност"
+  },
+  {
+    "code": "bal.b.iii.t",
+    "parent": "bal.b.iii",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група III"
+  },
+  {
+    "code": "bal.b.iv",
+    "parent": "bal.b",
+    "kind": "line",
+    "side": "asset",
+    "name": "IV. Отсрочени данъци"
+  },
+  {
+    "code": "bal.b.t",
+    "parent": "bal.b",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за раздел Б"
+  },
+  {
+    "code": "bal.c",
+    "parent": null,
+    "kind": "header",
+    "side": "asset",
+    "name": "В. Текущи (краткотрайни) активи"
+  },
+  {
+    "code": "bal.c.i",
+    "parent": "bal.c",
+    "kind": "header",
+    "side": "asset",
+    "name": "I. Материални запаси"
+  },
+  {
+    "code": "bal.c.i.1",
+    "parent": "bal.c.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "1. Суровини и материали"
+  },
+  {
+    "code": "bal.c.i.2",
+    "parent": "bal.c.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "2. Незавършено производство"
+  },
+  {
+    "code": "bal.c.i.3",
+    "parent": "bal.c.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "3. Продукция и стоки, в т.ч.:"
+  },
+  {
+    "code": "bal.c.i.3a",
+    "parent": "bal.c.i.3",
+    "kind": "line",
+    "side": "asset",
+    "name": "— продукция"
+  },
+  {
+    "code": "bal.c.i.3b",
+    "parent": "bal.c.i.3",
+    "kind": "line",
+    "side": "asset",
+    "name": "— стоки"
+  },
+  {
+    "code": "bal.c.i.4",
+    "parent": "bal.c.i",
+    "kind": "line",
+    "side": "asset",
+    "name": "4. Предоставени аванси"
+  },
+  {
+    "code": "bal.c.i.t",
+    "parent": "bal.c.i",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група I"
+  },
+  {
+    "code": "bal.c.ii",
+    "parent": "bal.c",
+    "kind": "header",
+    "side": "asset",
+    "name": "II. Вземания"
+  },
+  {
+    "code": "bal.c.ii.1",
+    "parent": "bal.c.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "1. Вземания от клиенти и доставчици"
+  },
+  {
+    "code": "bal.c.ii.2",
+    "parent": "bal.c.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "2. Вземания от предприятия от група"
+  },
+  {
+    "code": "bal.c.ii.3",
+    "parent": "bal.c.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "3. Вземания, свързани с асоциирани и смесени предприятия"
+  },
+  {
+    "code": "bal.c.ii.4",
+    "parent": "bal.c.ii",
+    "kind": "line",
+    "side": "asset",
+    "name": "4. Други вземания"
+  },
+  {
+    "code": "bal.c.ii.t",
+    "parent": "bal.c.ii",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група II"
+  },
+  {
+    "code": "bal.c.iii",
+    "parent": "bal.c",
+    "kind": "header",
+    "side": "asset",
+    "name": "III. Инвестиции"
+  },
+  {
+    "code": "bal.c.iii.1",
+    "parent": "bal.c.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "1. Акции и дялове в предприятия от група"
+  },
+  {
+    "code": "bal.c.iii.2",
+    "parent": "bal.c.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "2. Изкупени собствени акции с отделно посочване на номиналната им стойност"
+  },
+  {
+    "code": "bal.c.iii.3",
+    "parent": "bal.c.iii",
+    "kind": "line",
+    "side": "asset",
+    "name": "3. Други инвестиции"
+  },
+  {
+    "code": "bal.c.iii.t",
+    "parent": "bal.c.iii",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група III"
+  },
+  {
+    "code": "bal.c.iv",
+    "parent": "bal.c",
+    "kind": "header",
+    "side": "asset",
+    "name": "IV. Парични средства, в т.ч.:"
+  },
+  {
+    "code": "bal.c.iv.a",
+    "parent": "bal.c.iv",
+    "kind": "line",
+    "side": "asset",
+    "name": "— в брой"
+  },
+  {
+    "code": "bal.c.iv.b",
+    "parent": "bal.c.iv",
+    "kind": "line",
+    "side": "asset",
+    "name": "— в безсрочни сметки (депозити)"
+  },
+  {
+    "code": "bal.c.iv.t",
+    "parent": "bal.c.iv",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за група IV"
+  },
+  {
+    "code": "bal.c.t",
+    "parent": "bal.c",
+    "kind": "total",
+    "side": "asset",
+    "name": "Общо за раздел В"
+  },
+  {
+    "code": "bal.d",
+    "parent": null,
+    "kind": "line",
+    "side": "asset",
+    "name": "Г. Разходи за бъдещи периоди"
+  },
+  {
+    "code": "bal.t",
+    "parent": null,
+    "kind": "total",
+    "side": "asset",
+    "name": "Сума на актива (А+Б+В+Г)"
+  },
+  {
+    "code": "bal.p.a",
+    "parent": null,
+    "kind": "header",
+    "side": "liability",
+    "name": "А. Собствен капитал"
+  },
+  {
+    "code": "bal.p.a.i",
+    "parent": "bal.p.a",
+    "kind": "line",
+    "side": "liability",
+    "name": "I. Записан капитал"
+  },
+  {
+    "code": "bal.p.a.ii",
+    "parent": "bal.p.a",
+    "kind": "line",
+    "side": "liability",
+    "name": "II. Премии от емисии"
+  },
+  {
+    "code": "bal.p.a.iii",
+    "parent": "bal.p.a",
+    "kind": "line",
+    "side": "liability",
+    "name": "III. Резерв от последващи оценки"
+  },
+  {
+    "code": "bal.p.a.iv",
+    "parent": "bal.p.a",
+    "kind": "header",
+    "side": "liability",
+    "name": "IV. Резерви"
+  },
+  {
+    "code": "bal.p.a.iv.1",
+    "parent": "bal.p.a.iv",
+    "kind": "line",
+    "side": "liability",
+    "name": "1. Законови резерви"
+  },
+  {
+    "code": "bal.p.a.iv.2",
+    "parent": "bal.p.a.iv",
+    "kind": "line",
+    "side": "liability",
+    "name": "2. Резерв, свързан с изкупени собствени акции"
+  },
+  {
+    "code": "bal.p.a.iv.3",
+    "parent": "bal.p.a.iv",
+    "kind": "line",
+    "side": "liability",
+    "name": "3. Резерв съгласно учредителен акт"
+  },
+  {
+    "code": "bal.p.a.iv.4",
+    "parent": "bal.p.a.iv",
+    "kind": "line",
+    "side": "liability",
+    "name": "4. Други резерви"
+  },
+  {
+    "code": "bal.p.a.iv.t",
+    "parent": "bal.p.a.iv",
+    "kind": "total",
+    "side": "liability",
+    "name": "Общо за група IV"
+  },
+  {
+    "code": "bal.p.a.v",
+    "parent": "bal.p.a",
+    "kind": "header",
+    "side": "liability",
+    "name": "V. Натрупана печалба (загуба) от минали години, в т.ч.:"
+  },
+  {
+    "code": "bal.p.a.v.1",
+    "parent": "bal.p.a.v",
+    "kind": "line",
+    "side": "liability",
+    "name": "— неразпределена печалба"
+  },
+  {
+    "code": "bal.p.a.v.2",
+    "parent": "bal.p.a.v",
+    "kind": "line",
+    "side": "liability",
+    "name": "— непокрита загуба"
+  },
+  {
+    "code": "bal.p.a.v.t",
+    "parent": "bal.p.a.v",
+    "kind": "total",
+    "side": "liability",
+    "name": "Общо за група V"
+  },
+  {
+    "code": "bal.p.a.vi",
+    "parent": "bal.p.a",
+    "kind": "line",
+    "side": "liability",
+    "name": "VI. Текуща печалба (загуба)"
+  },
+  {
+    "code": "bal.p.a.t",
+    "parent": "bal.p.a",
+    "kind": "total",
+    "side": "liability",
+    "name": "Общо за раздел А"
+  },
+  {
+    "code": "bal.p.b",
+    "parent": null,
+    "kind": "header",
+    "side": "liability",
+    "name": "Б. Провизии и сходни задължения"
+  },
+  {
+    "code": "bal.p.b.1",
+    "parent": "bal.p.b",
+    "kind": "line",
+    "side": "liability",
+    "name": "1. Провизии за пенсии и други подобни задължения"
+  },
+  {
+    "code": "bal.p.b.2",
+    "parent": "bal.p.b",
+    "kind": "line",
+    "side": "liability",
+    "name": "2. Провизии за данъци, в т.ч. отсрочени данъци"
+  },
+  {
+    "code": "bal.p.b.3",
+    "parent": "bal.p.b",
+    "kind": "line",
+    "side": "liability",
+    "name": "3. Други провизии и сходни задължения"
+  },
+  {
+    "code": "bal.p.b.t",
+    "parent": "bal.p.b",
+    "kind": "total",
+    "side": "liability",
+    "name": "Общо за раздел Б"
+  },
+  {
+    "code": "bal.p.c",
+    "parent": null,
+    "kind": "header",
+    "side": "liability",
+    "name": "В. Задължения"
+  },
+  {
+    "code": "bal.p.c.1",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "1. Облигационни заеми с отделно посочване на конвертируемите"
+  },
+  {
+    "code": "bal.p.c.2",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "2. Задължения към финансови предприятия"
+  },
+  {
+    "code": "bal.p.c.3",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "3. Получени аванси"
+  },
+  {
+    "code": "bal.p.c.4",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "4. Задължения към доставчици"
+  },
+  {
+    "code": "bal.p.c.5",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "5. Задължения по полици"
+  },
+  {
+    "code": "bal.p.c.6",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "6. Задължения към предприятия от група"
+  },
+  {
+    "code": "bal.p.c.7",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "7. Задължения, свързани с асоциирани и смесени предприятия"
+  },
+  {
+    "code": "bal.p.c.8",
+    "parent": "bal.p.c",
+    "kind": "line",
+    "side": "liability",
+    "name": "8. Други задължения, в т.ч.:"
+  },
+  {
+    "code": "bal.p.c.8a",
+    "parent": "bal.p.c.8",
+    "kind": "line",
+    "side": "liability",
+    "name": "— към персонала"
+  },
+  {
+    "code": "bal.p.c.8b",
+    "parent": "bal.p.c.8",
+    "kind": "line",
+    "side": "liability",
+    "name": "— осигурителни задължения"
+  },
+  {
+    "code": "bal.p.c.8c",
+    "parent": "bal.p.c.8",
+    "kind": "line",
+    "side": "liability",
+    "name": "— данъчни задължения"
+  },
+  {
+    "code": "bal.p.c.t",
+    "parent": "bal.p.c",
+    "kind": "total",
+    "side": "liability",
+    "name": "Общо за раздел В"
+  },
+  {
+    "code": "bal.p.d",
+    "parent": null,
+    "kind": "line",
+    "side": "liability",
+    "name": "Г. Финансирания и приходи за бъдещи периоди, в т.ч.:"
+  },
+  {
+    "code": "bal.p.d.a",
+    "parent": "bal.p.d",
+    "kind": "line",
+    "side": "liability",
+    "name": "— финансирания"
+  },
+  {
+    "code": "bal.p.d.b",
+    "parent": "bal.p.d",
+    "kind": "line",
+    "side": "liability",
+    "name": "— приходи за бъдещи периоди"
+  },
+  {
+    "code": "bal.p.t",
+    "parent": null,
+    "kind": "total",
+    "side": "liability",
+    "name": "Сума на пасива (А+Б+В+Г)"
+  }
+]

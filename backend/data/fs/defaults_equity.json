@@ -1,0 +1,8 @@
+{
+  "eq.open": "+101НК+111НК+112НК+119НК+122НК-121НД",
+  "eq.after": "+@eq.open+@eq.policy+@eq.errors",
+  "eq.owners": "+101К-101НК",
+  "eq.result": "+123К-123Д",
+  "eq.div": "+123Д/455К",
+  "eq.close": "+@eq.after+@eq.owners+@eq.result-@eq.div-@eq.loss_cover+@eq.reval+@eq.other"
+}

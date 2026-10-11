@@ -1,0 +1,177 @@
+[
+  {
+    "code": "cf.op",
+    "parent": null,
+    "kind": "header",
+    "side": "cash",
+    "name": "А. Оперативна дейност"
+  },
+  {
+    "code": "cf.op.in.cust",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Постъпления от клиенти"
+  },
+  {
+    "code": "cf.op.out.sup",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Плащания към доставчици"
+  },
+  {
+    "code": "cf.op.out.staff",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Плащания за персонал"
+  },
+  {
+    "code": "cf.op.out.tax",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Платени данъци"
+  },
+  {
+    "code": "cf.op.in.other",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Други постъпления по оперативна дейност"
+  },
+  {
+    "code": "cf.op.out.other",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Други плащания по оперативна дейност"
+  },
+  {
+    "code": "cf.op.stfa",
+    "parent": "cf.op",
+    "kind": "line",
+    "side": "cash",
+    "name": "Потоци, свързани с КФА държани за търговия"
+  },
+  {
+    "code": "cf.op.net",
+    "parent": "cf.op",
+    "kind": "total",
+    "side": "cash",
+    "name": "Нетен поток от оперативна дейност"
+  },
+  {
+    "code": "cf.inv",
+    "parent": null,
+    "kind": "header",
+    "side": "cash",
+    "name": "Б. Инвестиционна дейност"
+  },
+  {
+    "code": "cf.inv.out.ppe",
+    "parent": "cf.inv",
+    "kind": "line",
+    "side": "cash",
+    "name": "Придобиване на дълготрайни активи"
+  },
+  {
+    "code": "cf.inv.in.ppe",
+    "parent": "cf.inv",
+    "kind": "line",
+    "side": "cash",
+    "name": "Постъпления от продажба на дълготрайни активи"
+  },
+  {
+    "code": "cf.inv.acq",
+    "parent": "cf.inv",
+    "kind": "line",
+    "side": "cash",
+    "name": "Потоци от бизнескомбинации — придобивания"
+  },
+  {
+    "code": "cf.inv.net",
+    "parent": "cf.inv",
+    "kind": "total",
+    "side": "cash",
+    "name": "Нетен поток от инвестиционна дейност"
+  },
+  {
+    "code": "cf.fin",
+    "parent": null,
+    "kind": "header",
+    "side": "cash",
+    "name": "В. Финансова дейност"
+  },
+  {
+    "code": "cf.fin.in.cap",
+    "parent": "cf.fin",
+    "kind": "line",
+    "side": "cash",
+    "name": "Постъпления от собственици"
+  },
+  {
+    "code": "cf.fin.in.loan",
+    "parent": "cf.fin",
+    "kind": "line",
+    "side": "cash",
+    "name": "Получени заеми"
+  },
+  {
+    "code": "cf.fin.out.loan",
+    "parent": "cf.fin",
+    "kind": "line",
+    "side": "cash",
+    "name": "Погасени заеми"
+  },
+  {
+    "code": "cf.fin.out.div",
+    "parent": "cf.fin",
+    "kind": "line",
+    "side": "cash",
+    "name": "Платени дивиденти"
+  },
+  {
+    "code": "cf.fin.lease",
+    "parent": "cf.fin",
+    "kind": "line",
+    "side": "cash",
+    "name": "Плащания по финансов лизинг"
+  },
+  {
+    "code": "cf.fin.net",
+    "parent": "cf.fin",
+    "kind": "total",
+    "side": "cash",
+    "name": "Нетен поток от финансова дейност"
+  },
+  {
+    "code": "cf.change",
+    "parent": null,
+    "kind": "total",
+    "side": "cash",
+    "name": "Изменение на паричните средства"
+  },
+  {
+    "code": "cf.open",
+    "parent": null,
+    "kind": "line",
+    "side": "cash",
+    "name": "Парични средства в началото на периода"
+  },
+  {
+    "code": "cf.fx",
+    "parent": null,
+    "kind": "line",
+    "side": "cash",
+    "name": "Курсови разлики"
+  },
+  {
+    "code": "cf.close",
+    "parent": null,
+    "kind": "total",
+    "side": "cash",
+    "name": "Парични средства в края на периода"
+  }
+]

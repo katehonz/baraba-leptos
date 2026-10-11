@@ -1,0 +1,79 @@
+[
+  {
+    "code": "eq.open",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "1. Салдо в началото на отчетния период"
+  },
+  {
+    "code": "eq.policy",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "2. Промени в счетоводната политика"
+  },
+  {
+    "code": "eq.errors",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "3. Грешки"
+  },
+  {
+    "code": "eq.after",
+    "parent": null,
+    "kind": "total",
+    "side": "equity",
+    "name": "4. Салдо след промени в политиката и грешки"
+  },
+  {
+    "code": "eq.owners",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "5. Изменения за сметка на собствениците"
+  },
+  {
+    "code": "eq.result",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "6. Финансов резултат за текущия период"
+  },
+  {
+    "code": "eq.div",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "7. Разпределения на печалба (дивиденти)"
+  },
+  {
+    "code": "eq.loss_cover",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "8. Покриване на загуба"
+  },
+  {
+    "code": "eq.reval",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "9. Последващи оценки на активи и пасиви"
+  },
+  {
+    "code": "eq.other",
+    "parent": null,
+    "kind": "line",
+    "side": "equity",
+    "name": "10. Други изменения в собствения капитал"
+  },
+  {
+    "code": "eq.close",
+    "parent": null,
+    "kind": "total",
+    "side": "equity",
+    "name": "11. Салдо към края на отчетния период"
+  }
+]

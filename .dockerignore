@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+
+# Docker
+docker-compose.yml
+.dockerignore
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Build artifacts
+backend/app
+backend/bin
+backend/lib
+backend/start_server
+backend/baraba-server
+backend/.shards
+leptos/target
+leptos/dist
+leptos/pkg
+
+# Databases
+*.sqlite3
+*.db
+
+# Logs
+*.log
+logs/
+
+# Temp files
+tmp/
+temp/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation (not needed in container)
+*.md
+!README.md
+docs/

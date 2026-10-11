@@ -1,0 +1,2 @@
+class DeleteFixedAssetTransaction < FixedAssetTransaction::DeleteOperation
+end
